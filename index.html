@@ -4,83 +4,25 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <title>Document</title>
   </head>
   <body>
-    <script>
-      //   let first = "I";
-      //   let second = "like";
-      //   let third = "JS";
-      //   console.log(`${first} ${second} ${third}`.toUpperCase());
 
-      //   ("Мне 35 лет");
+    <form name="login" style="width: 40%; margin: 5% auto;">
+      <div class="mb-3">
+        <label for="email" class="form-label">Email address</label>
+        <input type="email" class="form-control" name="email" placeholder="email@example.com">
+      </div>
+      <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input type="password" class="form-control" name="password" placeholder="Password">
+      </div>
+      <div class="mb-3">
+      </div>
+      <button type="submit" class="btn btn-primary">Sign in</button>
+    </form>
 
-      //   let age = +prompt("Введите возраст");
-
-      //   console.log(typeof age);
-
-      //   console.log(`Мне ${age} лет`);
-
-      //   ("My name is variable");
-
-      //   let name = prompt("Введите имя");
-
-      //   console.log(`My name is ${name}`);
-
-      //   let number = Math.floor(Math.random() * 100);
-      //   console.log(number);
-
-      // let guess = +prompt("Введите число"); // game
-
-      //   while (true) {
-      //     if (guess > number) {
-      //       alert("Число меньше");
-      //       guess = +prompt("Введите число");
-      //     } else if (guess < number) {
-      //       alert("Число больше");
-      //       guess = +prompt("Введите число");
-      //     } else {
-      //       alert("ПОБЕДА!");
-      //       break;
-      //     }
-      //   }
-
-      //   let friend = prompt("Введите имя друга");
-
-      //   for (let i = 0; i < 5; i += 1) {
-      //     console.log(`My friend is ${friend}`);
-      //     friend = prompt("Введите имя друга");
-      //   }
-
-      //   let permission = confirm("Тебе можно алкоголь?");
-
-      //   alert(`Тебе можно алкоголь: ${permission}`);
-
-      //   let anagram = prompt("Введите слово");
-
-      //   let pair = anagram.split("").reverse().join("");
-
-      //   alert(anagram === pair);
-
-      //   let text = prompt("Введите текст").split(" ");
-
-      //   let res = "";
-
-      //   for (let i of text) {
-      //     res += i[0];
-      //   }
-
-      //   alert(res.toUpperCase());
-
-      let word1 = prompt("Введите слово 1");
-
-      let word2 = prompt("Введите слово 2");
-
-      if (word1.length >= word2.length) {
-        alert(word1);
-      } else {
-        alert(`Длиннее слово: ${word2}`);
-      }
-    </script>
+    <script src="HW19.js"></script>
   </body>
 </html>
